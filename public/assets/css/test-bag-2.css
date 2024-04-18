@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ffff;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #C0D9FF;
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header h3 {
+    padding-left: 10px;
+    font-weight: unset;
+}
+
+body .container {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+main .title {
+    margin-bottom: 10px;
+}
+
+main .title h4 {
+    font-weight: unset;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-row>label {
+    width: 100px;
+}
+
+.form-row>input {
+    padding: 7px 7px;
+    width: 60%;
+}
+
+.form-row>select {
+    padding: 7px 7px;
+    width: 62%;
+}
+
+.form-row>textarea {
+    padding: 7px 7px;
+    width: 60%;
+}
+
+.form-input {
+    margin-bottom: 50px;
+}
+
+.btn {
+    background-color: #426BA9;
+    border: none;
+    color: white;
+    padding: 12px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #26569e;
+}
+
+.btn span {
+    margin-left: 5px;
+}
+
+
+table {
+    width: 750px;
+    border-collapse: collapse;
+}
+
+th {
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    table {
+        width: 100%;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-column);
+        color: #000;
+        font-weight: bold;
+    }
+
+}
